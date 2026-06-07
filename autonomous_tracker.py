@@ -13,7 +13,7 @@ async def run():
     print("Initializing MAVSDK Server...")
     
     # Use the specific IP that successfully connected for you
-    await drone.connect(system_address="udpout://172.22.252.223:14580")
+    await drone.connect(system_address="udpout://<Your-IP>:14580")
     
     print("Waiting for drone connection...")
     async for state in drone.core.connection_state():
