@@ -41,8 +41,14 @@ Update line 8 in autonomous_tracker.py with this IP address:
 await drone.connect(system_address="udpout://<YOUR_WSL_IP>:14580")
 ```
 
-**Run the tracker:**
 ```
 PowerShell
 python autonomous_tracker.py
 ```
+## Demonstration Video
+[**🎥 Click Here to Watch the Demo Video**](https://drive.google.com/file/d/11ein57lz1enEkYAUhtu6pH6mifdShMoF/view?usp=sharing)
+The video demonstrates the drone taking off autonomously, tracking a moving person, maintaining distance, and executing a search sweep when the target is lost.
+
+## GitHub Repository
+https://github.com/mdsami275/drone_tracking
+**Run the tracker:**
