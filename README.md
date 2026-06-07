@@ -23,3 +23,26 @@ Open your Ubuntu terminal and bridge the network:
 ```bash
 export PX4_SIM_HOST_ADDR=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}')
 make px4_sitl gz_x500
+```
+**2. Run the Autonomous Tracker (Windows)** 
+
+**Open your Windows terminal** (PowerShell or VS Code), activate your Python virtual environment, and install the required dependencies:
+ ```powershell
+ pip install mavsdk ultralytics opencv-python
+ ```
+
+**Find the internal IP address of your WSL instance:**
+```PowerShell
+wsl -d Ubuntu-22.04 hostname -I
+```
+
+Update line 8 in autonomous_tracker.py with this IP address:
+```Python
+await drone.connect(system_address="udpout://<YOUR_WSL_IP>:14580")
+```
+
+**Run the tracker:**
+```
+PowerShell
+python autonomous_tracker.py
+```
