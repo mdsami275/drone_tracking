@@ -47,5 +47,5 @@ PowerShell
 python autonomous_tracker.py
 ```
 ## Demonstration Video
-[**🎥 Click Here to Watch the Demo Video**](https://drive.google.com/file/d/11ein57lz1enEkYAUhtu6pH6mifdShMoF/view?usp=sharing)
+[**🎥 Click Here to Watch the Demo Video**]()
 The video demonstrates the drone taking off autonomously, tracking a moving person, maintaining distance, and executing a search sweep when the target is lost.
